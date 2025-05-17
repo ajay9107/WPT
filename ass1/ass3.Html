@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .sidebar {
+      background-color: #ecf0f1;
+      padding: 15px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 10px;
+    }
+
+    article {
+      background-color: #fdff79;
+      border: 1px solid #c4deff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .date {
+      color: #7f8c8d;
+      font-size: 0.85em;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BlogSphere</h1>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <h3>STADIUM</h3>
+      <ul>
+        <li><a href="#">GURJAT</a></li>
+        <li><a href="#">KOLKATA</a></li>
+        <li><a href="#">MUMBAI</a></li>
+        <li><a href="#">CHENNAI</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <article>
+        <h2>Narendra Modi Stadium, Ahmedabad</h2>
+        <p class="date">July 06, 2019</p>
+        <p>The world's largest cricket stadium, renovated in 2020, with a capacity of 132,000</p>
+      </article>
+
+      <article>
+        <h2>Eden Gardens, Kolkata</h2>
+        <p class="date">May 15, 2004</p>
+        <p>India's oldest cricket ground, established in 1864, with a capacity of 66,000</p>
+      </article>
+
+      <article>
+        <h2>Wankhede Stadium, Mumbai</h2>
+        <p class="date">Aug 4, 2009</p>
+        <p>Hosted India's 2011 World Cup triumph, with a capacity of 33,000</p>
+      </article>
+
+      <article>
+        <h2>M. A. Chidambaram Stadium, Chennai</h2>
+        <p class="date">sep 11, 2011</p>
+        <p>A well-known venue with a capacity of 38,200</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2011 BlogSphere</p>
+  </footer>
+
+</body>
+</html>
