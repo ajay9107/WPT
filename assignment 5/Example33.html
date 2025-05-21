@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hoverParagraph" onmouseover="changeContent()" onmouseout="restoreContent()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit a esse alias accusamus nulla modi sunt, labore officia placeat animi ipsa nihil natus aliquid quia odit iusto facere magnam ducimus.
+
+    </p>
+    <script>
+        function changeContent() 
+        {
+            document.getElementById("hoverParagraph").innerHTML = "The content has changed! Now this is the new text.";
+        }
+
+        function restoreContent() 
+        {
+            document.getElementById("hoverParagraph").innerHTML = "This is some dummy content. Hover over me to see the change!";
+        }
+    </script>
+</body>
+</html>
+<style>
+    p :hover{
+         color: blue;
+    }
+    
+        #hoverParagraph {
+            font-size: 18px;
+            color: gray;
+            transition: all 0.3s ease;
+        }
+ 
+</style>

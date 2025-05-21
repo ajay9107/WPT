@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Data Type</title>
+</head>
+<body>
+
+    <input type="text" id="txt" placeholder="Enter something">
+
+ 
+    <button onclick="checkDataType()">Check Data Type</button>
+
+    <script>
+       
+        function checkDataType()
+         {
+         
+            var value = document.getElementById("txt").value;
+
+          
+            if (isNaN(value)) 
+            {
+                console.log("The entered value is a string.");
+            } else {
+                console.log("The entered value is a number.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbox Validation</title>
+    <style>
+        
+        #txt {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <input type="text" id="txt" placeholder="Enter something">
+
+    
+    <button onclick="validateTextbox()">Check Textbox</button>
+
+    <script>
+  
+        function validateTextbox() 
+        {
+            var textbox = document.getElementById("txt");
+
+           
+            if (textbox.value.trim() === "") 
+            {
+               
+                textbox.style.borderColor = "red";
+                textbox.style.borderWidth = "2px";
+            } else {
+               
+                textbox.style.borderColor = "";
+                textbox.style.borderWidth = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
