@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square of a Number</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter a number">
+    <button onclick="displaySquare()">Get Square</button>
+    <p id="para"></p>
+
+    <script>
+        function displaySquare() {
+            const value = document.getElementById("txt").value;
+            const number = parseFloat(value); 
+
+            if (!isNaN(number)) {
+                const square = Math.pow(number, 2); 
+                document.getElementById("para").innerText = "Square of given number is: " + square;
+            } else {
+                document.getElementById("para").innerText = "Please enter a valid number.";
+            }
+        }
+    </script>
+
+</body>
+</html>

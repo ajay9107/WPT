@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 51</title></head>
+<body>
+<h3>Add value 20 at start of array</h3>
+<p id="arr51"></p>
+<button onclick="addValue51()">Add 20 at Start</button>
+<script>
+  let arr51 = [5, 10, 15];
+  document.getElementById("arr51").innerText = arr51;
+  function addValue51() {
+    arr51.unshift(20);
+    document.getElementById("arr51").innerText = arr51;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 59</title></head>
+<body>
+<h3>Square values using for-in, forEach and map</h3>
+<p id="forin59"></p>
+<p id="foreach59"></p>
+<p id="map59"></p>
+<script>
+  let arr59 = [1, 2, 3, 4];
+
+  let forInResult59 = [];
+  for (let i in arr59) {
+    forInResult59.push(arr59[i] * arr59[i]);
+  }
+  document.getElementById("forin59").innerText = "For-In: " + forInResult59;
+
+  let forEachResult59 = [];
+  arr59.forEach(val => forEachResult59.push(val * val));
+  document.getElementById("foreach59").innerText = "forEach: " + forEachResult59;
+
+  let mapResult59 = arr59.map(val => val * val);
+  document.getElementById("map59").innerText = "Map: " + mapResult59;
+</script>
+</body>
+</html>

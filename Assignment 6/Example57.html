@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 57</title></head>
+<body>
+<h3>Validate name</h3>
+<input type="text" id="name57" placeholder="Enter name">
+<button onclick="validateName57()">Validate</button>
+<p id="result57"></p>
+<script>
+  function validateName57() {
+    let name = document.getElementById("name57").value;
+    let pattern = /^[A-Za-z ]{2,}$/;
+    document.getElementById("result57").innerText = pattern.test(name) ? "Valid name" : "Invalid";
+  }
+</script>
+</body>
+</html>

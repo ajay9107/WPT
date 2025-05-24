@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 53</title></head>
+<body>
+<h3>Remove first value from array</h3>
+<p id="arr53"></p>
+<button onclick="removeFirst53()">Remove First</button>
+<script>
+  let arr53 = [1, 2, 3, 4, 5];
+  document.getElementById("arr53").innerText = arr53;
+  function removeFirst53() {
+    arr53.shift();
+    document.getElementById("arr53").innerText = arr53;
+  }
+</script>
+</body>
+</html>

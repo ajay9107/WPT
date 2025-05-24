@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 55</title></head>
+<body>
+<h3>Validate mobile number</h3>
+<input type="text" id="mobile55" placeholder="Enter mobile number">
+<button onclick="validateMobile55()">Validate</button>
+<p id="result55"></p>
+<script>
+  function validateMobile55() {
+    let mobile = document.getElementById("mobile55").value;
+    let pattern = /^[6-9]\d{9}$/;
+    document.getElementById("result55").innerText = pattern.test(mobile) ? "Valid mobile number" : "Invalid";
+  }
+</script>
+</body>
+</html>

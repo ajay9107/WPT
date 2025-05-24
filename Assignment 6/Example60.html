@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 60</title></head>
+<body>
+<h3>Filter array to show only 1, 11, 14</h3>
+<p id="filter60"></p>
+<script>
+  let arr60 = [1, 4, 6, 8, 12, 11, 13];
+  let filtered60 = arr60.filter(num => [1, 11, 14].includes(num));
+  document.getElementById("filter60").innerText = "Filtered: " + filtered60;
+</script>
+</body>
+</html>

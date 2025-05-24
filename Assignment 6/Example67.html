@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Capital and Small Case</h3>
+<input type="text" onkeyup="convertCases(this.value)">
+<p id="para1"></p>
+<p id="para2"></p>
+<script>
+  function convertCases(text) {
+    document.getElementById("para1").textContent = text.toUpperCase();
+    document.getElementById("para2").textContent = text.toLowerCase();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 52</title></head>
+<body>
+<h3>Remove last value from array</h3>
+<p id="arr52"></p>
+<button onclick="removeLast52()">Remove Last</button>
+<script>
+  let arr52 = [1, 2, 3, 4, 5];
+  document.getElementById("arr52").innerText = arr52;
+  function removeLast52() {
+    arr52.pop();
+    document.getElementById("arr52").innerText = arr52;
+  }
+</script>
+</body>
+</html>
